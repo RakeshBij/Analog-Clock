@@ -5,7 +5,7 @@ const sec = document.getElementById("sec");
 setInterval(function () {
   let curHour = new Date().getHours();
 
-  curHour > 12 ? (curHour = curHour - 12) : curHour;
+  curHour = curHour > 12 ? curHour - 12 : curHour;
   const newHour = curHour + new Date().getMinutes() / 60;
 
   hour.style.rotate = `${newHour * 30 - 90}deg`;
