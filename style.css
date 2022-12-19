@@ -1,0 +1,42 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hour,
+.minute,
+.second {
+  border-radius: 0 50% 50% 0;
+  border: 2px solid black;
+  position: relative;
+  background-color: black;
+  rotate: -90deg;
+  transform-origin: 0px 0px;
+  transition: ease-in-out;
+  width: 60px;
+}
+
+.hour {
+  top: -100px;
+  left: 130px;
+  width: 35px;
+}
+
+.minute {
+  left: 132px;
+  top: -103px;
+}
+
+.second {
+  border: 1px solid black;
+  left: 130px;
+  top: -107px;
+}
